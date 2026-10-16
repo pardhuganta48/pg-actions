@@ -1,0 +1,11 @@
+on: push
+name: docker example
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: ./docker-action
+        with:
+          name: kanna
+      

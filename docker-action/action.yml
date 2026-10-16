@@ -1,0 +1,12 @@
+name: docker custom action
+description: docker custom action
+inputs:
+  name:
+    default: pardhu
+    required: false
+    description: provide a admin name
+runs:
+  using: docker
+  image: Dockerfile
+  args:
+    - ${{ inputs.name }}

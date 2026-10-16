@@ -1,0 +1,7 @@
+FROM alpine:latest
+
+COPY ENTRYPOINT.sh /ENTRYPOINT.sh
+
+RUN chmod +x /ENTRYPOINT.sh
+
+ENTRYPOINT ["/ENTRYPOINT.sh"]
